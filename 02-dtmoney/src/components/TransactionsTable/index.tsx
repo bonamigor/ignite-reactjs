@@ -26,6 +26,18 @@ export function TransactionsTable () {
             <td>Casa</td>
             <td>17/02/2021</td>
           </tr>
+          <tr>
+            <td>Energia</td>
+            <td className="withdraw">R$270,00</td>
+            <td>Casa</td>
+            <td>17/02/2021</td>
+          </tr>
+          <tr>
+            <td>Salário</td>
+            <td className="deposit">R$3.800</td>
+            <td>Trabalho</td>
+            <td>20/02/2021</td>
+          </tr>
         </tbody>
       </table>
     </Container>
