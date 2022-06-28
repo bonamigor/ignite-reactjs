@@ -1,0 +1,36 @@
+{
+  "id": "aa53211a-0d19-44d6-8d73-7cf87a5a4119",
+  "uid": "optio-aut-non",
+  "type": "publication",
+  "data": {
+    "title": [
+      {
+        "type": "heading1",
+        "text": "Enable revolutionary niches",
+        "spans": []
+      }
+    ],
+    "content": [
+      {
+        "type": "heading1",
+        "text": "Transition back-end e-services",
+        "spans": []
+      },
+      {
+        "type": "image",
+        "dimensions": {
+          "width": 900,
+          "height": 500
+        },
+        "alt": "Placeholder image",
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482?w=900&h=500&fit=crop"
+      },
+      {
+        "type": "paragraph",
+        "text": "Eiusmod nulla et consequat officia ipsum cupidatat aute mollit id fugiat officia irure.",
+        "spans": []
+      }
+    ]
+  }
+}

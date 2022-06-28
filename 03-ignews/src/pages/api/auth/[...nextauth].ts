@@ -10,6 +10,7 @@ export default NextAuth({
     GithubProvider({
       clientId: process.env.GITHUB_CLIENT_ID,
       clientSecret: process.env.GITHUB_CLIENT_SECRET,
+      checks: 'both',
       authorization: {
         params: {
           scope: 'read:user'
@@ -47,6 +48,7 @@ export default NextAuth({
 
         return true;
       } catch (error) {
+        console.log(error)
         return false;
       }
     }
