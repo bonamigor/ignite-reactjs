@@ -1,4 +1,6 @@
 import { usePrismicDocumentByUID, PrismicRichText } from '@prismicio/react';
+import { GetServerSideProps } from 'next';
+import { getSession } from 'next-auth/react';
 import Head from "next/head"
 import { useRouter } from "next/router"
 
@@ -31,6 +33,21 @@ export default function Post() {
   )
 }
 
-// export const getServerSideProps: GetServerSideProps = async ({ req, params}) => {
-//   const session = await getSession({ req })
-// }
+export const getServerSideProps: GetServerSideProps = async ({ req}) => {
+  const session = await getSession({ req })
+
+  if (!session?.activeSubscription) { 
+    return {
+      redirect: {
+        destination: '/',
+        permanent: false
+      }
+    }
+  }
+
+  return {
+    props: {
+      session
+    }
+  }
+}
